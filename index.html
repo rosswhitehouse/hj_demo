@@ -32,7 +32,7 @@
 
   <script>
     setTimeout(function () {
-      var form = document.createElement('form').createTextNode('FORM ADDED WITH JS');
+      var form = document.createElement('form').appendChild(document.createTextNode('FORM ADDED WITH JS'));
       document.getElementsByTagName('body').appendChild(form);
 
     }, 2000);
